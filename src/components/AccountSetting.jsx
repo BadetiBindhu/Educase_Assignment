@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../styles.css";
-import defaultImage from "../../public/user.png"; // Make sure to import your default image
+import "../styles/AccountSettings.css";
+import defaultImage from "../../public/profileImg.png"; // Make sure to import your default image
 
 function AccountSetting() {
   const navigate = useNavigate();
@@ -31,35 +31,39 @@ function AccountSetting() {
   if (!user) return null;
 
   return (
-    <div className="container-2">
-      <h2>Account Settings</h2>
-      <div className="profile-card">
-        <div className="profile-image-wrapper">
+    <div className="container">
+      <div className="top-bar">
+        <span className="top-bar-title">Account Settings</span>
+      </div>
+      <div className="profile-section">
+        <img src={profileImage} alt="Profile" className="profile-img" />
+        {/* <img src="img/Group 1585.png" alt="Camera" className="camera-icon" onClick={handleImageClick}/> */}
+        <div className="camera-icon" onClick={handleImageClick}>
           <img
-            src={profileImage}
-            alt="Profile"
-            className="profile-img"
-          />
-          <div className="camera-icon" onClick={handleImageClick}>
-            📷
-          </div>
-          <input
-            type="file"
-            accept="image/*"
-            ref={fileInputRef}
-            style={{ display: "none" }}
-            onChange={handleImageChange}
+            src="camera.png"
+            alt="Camera Icon"
+            style={{ cursor: "pointer" }}
           />
         </div>
-        <div>
-          <strong>{user.fullName}</strong>
-          <p>{user.email}</p>
+        <input
+          type="file"
+          accept="image/*"
+          ref={fileInputRef}
+          style={{ display: "none" }}
+          onChange={handleImageChange}
+        />
+
+        <div className="profile-info">
+          <div className="profile-name">{user.fullName}</div>
+          <div className="profile-email">{user.email}</div>
         </div>
       </div>
-      <p className="desc">
-        Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy
-        Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam
-      </p>
+
+      <div className="description">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+        diam.
+      </div>
     </div>
   );
 }

@@ -1,0 +1,89 @@
+.container {
+    position: relative;
+    width: 375px;
+    height: 812px;
+    background: #f7f8f9;
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Rubik', sans-serif;
+  }
+/* Top Bar */
+.top-bar {
+    width: 375px;
+    height: 68px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px #00000007;
+    position: relative;
+  }
+  
+  .top-bar-title {
+    position: absolute;
+    top: 27px;
+    left: 15px;
+    font: 400 18px/21px 'Rubik', sans-serif;
+    color: #1D2226;
+    text-transform: capitalize;
+  }
+  
+  /* Profile Section */
+  .profile-section {
+    position: relative;
+    height: 180px;
+    padding:10px;
+  }
+  
+  .profile-img {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 76px;
+    height: 76px;
+    object-fit: cover;
+  }
+  
+  .camera-icon {
+    position: absolute;
+    top: 79px;
+    left: 79px;
+    width: 21px;
+    height: 23px;
+  }
+  
+  .profile-info {
+    position: absolute;
+    top: 30px;
+    left: 116px;
+  }
+  
+  .profile-name {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px; 
+    height: 18px;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #1D2226;
+    opacity: 1;
+    text-transform: capitalize;
+  }
+  
+  .profile-email {
+    font: 400 14px/19px 'Rubik', sans-serif;
+    color: #1D2226;
+  }
+  
+  /* Description */
+  .description {
+    position: absolute;
+    top: 204px;
+    left: 20px;
+    right:18px;
+    width: 337px;
+    height: 63px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height:1.5;
+    color: #1D2226;
+    text-transform: capitalize;
+    text-align: left;
+  }

@@ -1,0 +1,77 @@
+.container {
+    position: relative;
+    width: 375px;
+    height: 812px;
+    background: #f7f8f9;
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  .welcome-text {
+    position: absolute;
+    top: 549px;
+    left: 20px;
+    width: 238px;
+    height: 33px;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+    color: #1D2226;
+  }
+  
+  .sub-text {
+    position: absolute;
+    top: 592px;
+    left: 20px;
+    width: 252px;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    text-align: left;
+    color: #1D2226;
+    opacity: 0.6;
+  }
+  
+  .create-account-btn {
+    position: absolute;
+    top: 669px;
+    left: 20px;
+    width: 335px;
+    height: 46px;
+    background: #6C25FF;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 17px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+  }
+  .create-account-btn:hover{
+    background-color: #5a1ee3;
+  }
+  .login-btn {
+    position: absolute;
+    top: 725px;
+    left: 20px;
+    width: 335px;
+    height: 46px;
+    background: rgba(108, 37, 255, 0.3); /* #6C25FF4B */
+    color: #1D2226;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 17px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+  }
+  .login-btn:hover{
+    background-color:rgba(108, 37, 255, 0.2); 
+    border-radius: 10px;
+    padding: 2px;
+  }
+  

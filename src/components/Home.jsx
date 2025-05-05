@@ -1,20 +1,17 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "../styles.css";
+import "../styles/LandingScreen.css";
 
 function Home() {
-  const navigate = useNavigate();
-
+  const navigate=useNavigate();
   return (
     <div className="container">
-      <h2>Welcome to PopX</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
-      <button onClick={() => navigate("/register")} className="btn primary">
-        Create Account
-      </button>
-      <button onClick={() => navigate("/login")} className="btn secondary">
-        Already Registered? Login
-      </button>
+      <div className="welcome-text">Welcome to PopX</div>
+      <div className="sub-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </div>
+      <button className="create-account-btn" onClick={()=>navigate('/register')}>Create Account</button>
+      <button className="login-btn" onClick={()=>navigate('login')}>Already Registered? Login</button>
     </div>
   );
 }
