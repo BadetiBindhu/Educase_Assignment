@@ -14,7 +14,7 @@ function Login() {
     if (storedUser.email === email && storedUser.password === password) {
       localStorage.setItem("loggedIn", "true");
       alert("Login successful!");
-      navigate("/account");
+      navigate("/accountsetting");
     } else {
       alert("Invalid credentials!");
     }

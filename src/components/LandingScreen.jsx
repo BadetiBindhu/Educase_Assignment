@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/LandingScreen.css";
 
-function Home() {
+function LandingScreen() {
   const navigate=useNavigate();
   return (
     <div className="container">
@@ -10,10 +10,10 @@ function Home() {
       <div className="sub-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </div>
-      <button className="create-account-btn" onClick={()=>navigate('/register')}>Create Account</button>
-      <button className="login-btn" onClick={()=>navigate('login')}>Already Registered? Login</button>
+      <button className="create-account-btn" onClick={()=>navigate('/signupform')}>Create Account</button>
+      <button className="login-btn" onClick={()=>navigate('/login')}>Already Registered? Login</button>
     </div>
   );
 }
 
-export default Home;
+export default LandingScreen;

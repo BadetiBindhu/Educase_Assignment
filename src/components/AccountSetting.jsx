@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../styles/AccountSettings.css";
+import "../styles/AccountSetting.css";
 import defaultImage from "../../public/profileImg.png"; // Make sure to import your default image
 
 function AccountSetting() {

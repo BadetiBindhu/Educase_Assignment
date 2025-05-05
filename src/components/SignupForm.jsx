@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import "../styles/SignupForm.css";
 
-function Register() {
+function SignupForm() {
   const navigate = useNavigate();
 
   const {
@@ -158,4 +158,4 @@ function Register() {
   );
 }
 
-export default Register;
+export default SignupForm;
